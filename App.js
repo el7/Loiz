@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection : 'column',
     alignItems: 'center',
-    height: '50%',
+    height: 500,
     margin: 10,
     backgroundColor: 'rgba(0,0,20,.5)',
   },
@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
     margin: 20,
   },
   question_container: {
-    alignItems: 'center',
     flexDirection : 'column',
   }
 
