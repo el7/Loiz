@@ -1,0 +1,36 @@
+/*===========================================
+ *
+ ===========================================*/
+
+import * as d3 from "d3";
+import React from 'react';
+import { Text, View, ART, ScrollView, StyleSheet } from 'react-native';
+import { ExpoLinksView } from '@expo/samples';
+import { Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+const {	Surface, Group,	Shape } = ART;
+
+export default class LinksScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Welcome to the Danger Zone',
+  };
+
+  render() {
+    return (
+      <ScrollView style={styles.container}>
+	  <Text>Hello friends</Text>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 15,
+    backgroundColor: '#fff',
+  }
+});
+
+
+
