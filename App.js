@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
   },
   overlay: {
     flex: 10,
-    backgroundColor: 'red',
+    backgroundColor: 'rgba(200,0,0,.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 1000
   }
 });
