@@ -11,12 +11,21 @@ import { AppLoading, Asset, Font, Icon } from 'expo';
 export default class App extends React.Component {
   render() {
     return (
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.scrollContainer}>
         <Text>Hello!</Text>
         <Text>Hello!</Text>
-	  <View style={styles.overlay}>
-            <Text>Overlay</Text>
-	  </View>
+	<View style={styles.question_underlay}>
+	  <View style={styles.question_container}><Text>This is a bunch of text that would otherwise be a message from the passive user. Below are buttons for the active user.</Text></View>
+	  <View style={styles.button_underlay_row}>
+	    <View style={styles.button_underlay_col}>
+	    <View style={styles.button_container}><Text>This makes me excited!</Text></View>
+	    <View style={styles.button_container}><Text>This is cool</Text></View>
+	    </View>
+	    <View style={styles.button_underlay_col}>
+	    <View style={styles.button_container}><Text>This seems lame</Text></View>
+	    <View style={styles.button_container}><Text>This bums me out</Text></View>
+	  </View></View>
+	    </View>
 	<Text>Seeya!</Text>
       </ScrollView>
     );
@@ -24,15 +33,33 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  scrollContainer: {
     flex: 1,
     backgroundColor: 'teal',
+    height: 300
   },
-  overlay: {
-    flex: 10,
-    backgroundColor: 'rgba(200,0,0,.5)',
-    justifyContent: 'center',
+  question_underlay: {
+    flex: 1,
+    flexDirection : 'column',
     alignItems: 'center',
-    height: 1000
+    height: '50%',
+    margin: 10,
+    backgroundColor: 'rgba(0,0,20,.5)',
+  },
+  button_underlay_row: {
+    flexDirection: 'row'
+  },
+  button_underlay_col: {
+    flexDirection : 'column',
+  },
+  button_container: {
+    maxWidth: '50%', 
+    backgroundColor: 'rgba(200,0,0,.5)',
+    margin: 20,
+  },
+  question_container: {
+    alignItems: 'center',
+    flexDirection : 'column',
   }
+
 });
