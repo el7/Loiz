@@ -1,0 +1,62 @@
+{
+	"Personal": {
+		"Name": "Bergam",
+		"Age": 27,
+		"Collection": {
+			"Sport": {
+				"Card1": {
+					"Topic": "Outdoor rock climbing",
+					"TValue": 10,
+					"Response1": "let's go!",
+					"Response2": "let's hit the gym instead!",
+					"Response3": "I'd give it a try!",
+					"Response4": "No way!",
+					"R1Value": 10,
+					"R2Value": 8,
+					"R3Value": 6,
+					"R4Value": 0
+				},
+				"Card2": {
+					"Topic": "Snowboarding",
+					"TValue": 10,
+					"Response1": "Let's shred the gnar together!",
+					"Response2": "I'll let you lead",
+					"Response3": "I'm not good with balance, but I'd give it a try",
+					"Response4": "No way!",
+					"R1Value": 10,
+					"R2Value": 7,
+					"R3Value": 5,
+					"R4Value": 0
+				}
+			},
+			"Games": {
+				"Card1": {
+					"Topic": "Video Games",
+					"TValue": 6,
+					"Response1": "Let's stay in all day and play!",
+					"Response2": "Middle-of-the-week session sounds fun!",
+					"Response3": "Only when there's nothing better",
+					"Response4": "No way!",
+					"R1Value": 2,
+					"R2Value": 8,
+					"R3Value": 8,
+					"R4Value": 5
+				},
+				"Card2": {
+					"Topic": "Board Games",
+					"TValue": 5,
+					"Response1": "Are my favorite",
+					"Response2": "I love playing",
+					"Response3": "I'll play sometimes",
+					"Response4": "No way!",
+					"R1Value": 5,
+					"R2Value": 7,
+					"R3Value": 7,
+					"R4Value": 2
+				}
+			}
+					
+		}
+	}
+}
+
