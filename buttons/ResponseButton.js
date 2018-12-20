@@ -6,7 +6,18 @@ export default class ResponseButton extends React.Component {
   render() {
     return (
 	<View style={styles.responseButton}>
-	    <Text>This seems lame</Text>
+	    <Text>This seems great!</Text>
+	</View>
+    );
+  }
+}
+
+
+export class ResponseButtonBig extends React.Component {
+  render() {
+    return (
+	<View style={styles.responseButton}>
+	    <Text>This seems big! ~~~ long ~~~ long message ~~~~ very big</Text>
 	</View>
     );
   }
@@ -17,7 +28,7 @@ const styles = StyleSheet.create({
   responseButton: {
     alignItems: 'center',
     padding: 5,
-    maxWidth: 60,
+    maxWidth: 100,
     backgroundColor: 'rgba(200,0,20,1)',
   },
 });

@@ -3,7 +3,7 @@ import Colors from '../constants/Colors';
 
 import { ScrollView, Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 //import { AppLoading, Asset, Font, Icon } from 'expo';
-import ResponseButton from '../buttons/ResponseButton';
+import ResponseButton, {ResponseButtonBig} from '../buttons/ResponseButton';
 
 export default class CardView extends React.Component {
   render() {
@@ -12,14 +12,13 @@ export default class CardView extends React.Component {
 	  <View style={styles.question_container}><Text>This is a bunch of text that would otherwise be a message from the passive user. Below are buttons for the active user.</Text></View>
 	  <View style={styles.button_underlay_row}>
 	    <View style={styles.button_underlay_col}>
-	    <View style={styles.button_container}><Text>This makes me excited!</Text></View>
-	    <View style={styles.button_container}><Text>This is cool</Text></View>
+	    <ResponseButtonBig />
+	    <ResponseButton />
 	    </View>
 	    <View style={styles.button_underlay_col}>
-	    <View style={styles.button_container}><Text>This seems lame</Text></View>
-	    <View style={styles.button_container}><Text>This bums me out</Text></View>
-	  </View></View>
+	    <ResponseButtonBig />
 	    <ResponseButton />
+	  </View></View>
 	    </View>
     );
   }
