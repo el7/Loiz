@@ -5,13 +5,18 @@ import {
 } from 'react-navigation';
 import React from 'react';
 import { ScrollView, StyleSheet, View, Text } from 'react-native';
-import CardView from './components/CardView';
-import CardFeed from './components/CardFeed';
+import CardView from './CardView';
 
-export default class App extends React.Component {
+export default class CardFeed extends React.Component {
   render() {
     return (
-    	<CardFeed />
+      <ScrollView style={styles.scrollContainer}>
+	<CardView />
+	<CardView />
+	<CardView />
+	<CardView />
+	<CardView />
+      </ScrollView>
     );
   }
 }

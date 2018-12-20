@@ -31,8 +31,9 @@ const styles = StyleSheet.create({
     flexDirection : 'column',
     alignItems: 'center',
     height: '100%',
-    margin: 10,
-    marginTop: 50,
+    marginLeft: '10%',
+    marginRight: '10%',
+    marginTop: 10,
     backgroundColor: 'rgba(250,0,0,1)', // red
   },
   button_underlay_row: {
