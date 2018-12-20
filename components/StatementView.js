@@ -13,7 +13,17 @@ export default class StatementView extends React.Component {
     );
   }
 }
-
+export class StatementViewBig extends React.Component {
+  render() {
+    return (
+	    <View style={styles.statementUnder}>
+		<View style={styles.statementView}>
+	    	<Text>This is a statement view. With lots of text, lots and lots of text.</Text>
+	    </View>
+	    </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   statementView: {
