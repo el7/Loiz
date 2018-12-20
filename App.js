@@ -7,6 +7,7 @@ import React from 'react';
 import { ScrollView, Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 //import AppNavigator from './navigation/AppNavigator';
+import CardView from './components/CardView';
 
 export default class App extends React.Component {
   render() {
@@ -26,6 +27,7 @@ export default class App extends React.Component {
 	    <View style={styles.button_container}><Text>This bums me out</Text></View>
 	  </View></View>
 	    </View>
+	<CardView />
 	<Text>Seeya!</Text>
       </ScrollView>
     );
