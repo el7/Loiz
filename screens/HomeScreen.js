@@ -13,6 +13,7 @@ import {
 import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
+import FeedView from '../components/FeedView';
 
 export default class HomeScreen extends React.Component {
 
@@ -26,6 +27,7 @@ export default class HomeScreen extends React.Component {
 
       <View style={styles.master_container}>
 
+    	<FeedView />
         <View style={styles.question_container}>
 	<Text>Hello</Text>
 	</View>

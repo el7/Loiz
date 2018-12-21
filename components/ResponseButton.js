@@ -3,7 +3,7 @@ import Colors from '../constants/Colors';
 import { ScrollView, Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 
 export default class ResponseButton extends React.Component {
-  render() {
+render() {
     return (
 	<View style={styles.responseButton}>
 	    <Text>This seems great!</Text>
