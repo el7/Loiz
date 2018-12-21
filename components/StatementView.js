@@ -7,7 +7,7 @@ export default class StatementView extends React.Component {
     return (
 	    <View style={styles.statementUnder}>
 		<View style={styles.statementView}>
-	    	<Text>This is a statement view.</Text>
+	    	<Text style={styles.statementText}>This is a longer, more beautiful statement view.</Text>
 	    </View>
 	    </View>
     );
@@ -18,7 +18,7 @@ export class StatementViewBig extends React.Component {
     return (
 	    <View style={styles.statementUnder}>
 		<View style={styles.statementView}>
-	    	<Text>This is a statement view. With lots of text, lots and lots of text.</Text>
+	    	<Text style={styles.statementText}>This is a statement view. With lots of text, lots and lots of text.</Text>
 	    </View>
 	    </View>
     );
@@ -28,13 +28,16 @@ export class StatementViewBig extends React.Component {
 const styles = StyleSheet.create({
   statementView: {
     flex: 1,
-    margin: 30,
+    margin: 10,
     backgroundColor: 'white',
   },
   statementUnder: {
     margin: 10,	
-    backgroundColor: 'purple',
+    backgroundColor: 'rgba(333,333,333,.9)',
     flex: 1,
+  },
+  statementText: {
+    fontSize: 30, 
   },
 });
 

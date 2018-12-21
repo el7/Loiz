@@ -7,7 +7,7 @@ export default class DividerView extends React.Component {
     return (
 	<View style={styles.dividerUnderlay}>
 		<View style={styles.divider}>
-			<Text> * ~ * ~ * ~ * ~ * </Text>
+			<Text style={styles.dividerText}> * ~ * ~ * ~ * ~ * ~ * </Text>
 		</View>
 	</View>
     );
@@ -29,7 +29,10 @@ const styles = StyleSheet.create({
     marginRight: '10%',
     backgroundColor: 'white', 
   },
-
+  dividerText: {
+    fontSize: 30,
+    color: 'white',
+  },
 });
 
 

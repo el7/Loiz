@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     padding: 5,
     margin: 10,
     maxWidth: 100,
-    backgroundColor: 'rgba(0,0,300,.3)',
+    backgroundColor: 'rgba(330,330,300,1)',
   },
 });
 

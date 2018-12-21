@@ -34,17 +34,17 @@ const styles = StyleSheet.create({
     marginLeft: '10%',
     marginRight: '10%',
     marginTop: 10,
-    backgroundColor: 'rgba(250,0,0,1)', // red
+    backgroundColor: 'rgba(0,0,0,.40)', 
   },
   button_underlay_row: {
     flexDirection: 'row',
-    backgroundColor: 'rgba(0,0,330,1)', // blue
-    margin: 20,
+    backgroundColor: 'rgba(0,0,0,.2)', 
+    margin: 5,
   },
   button_underlay_col: {
     flexDirection : 'column',
-    backgroundColor: 'rgba(300,300,300,1)', // white
-    margin: 20,
+    backgroundColor: 'purple', 
+    margin: 5,
   },
 });
 

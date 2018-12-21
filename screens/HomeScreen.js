@@ -28,11 +28,6 @@ export default class HomeScreen extends React.Component {
       <View style={styles.master_container}>
 
     	<FeedView />
-        <View style={styles.question_container}>
-	<Text>Hello</Text>
-	</View>
-        <View style={styles.answer_container}>
-	</View>
 
       </View>
       
@@ -45,18 +40,6 @@ const styles = StyleSheet.create({
   master_container: {
     flex: 1,
     backgroundColor: 'red',
-  },
-  question_container: {
-    flex: 1,
-    backgroundColor: 'red',
-  },
-  answer_container: {
-    flex: 1,
-    backgroundColor: 'blue',
-  },
-  bumper_container: {
-    flex: 1,
-    backgroundColor: 'green',
   },
 });
 
