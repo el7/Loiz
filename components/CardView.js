@@ -12,12 +12,12 @@ export default class CardView extends React.Component {
 	<StatementView />
 	    <View style={styles.button_underlay_row}>
 	    	<View style={styles.button_underlay_col}>
-	    		<ResponseButton />
-	    		<ResponseButtonBig />
+	    		<ResponseButton message="even more messages woohoo"/>
+	    		<ResponseButton message="even more messages woohoo"/>
 	    	</View>
 	    	<View style={styles.button_underlay_col}>
-	    		<ResponseButtonBig />
-	    		<ResponseButton />
+	    		<ResponseButton message="new message woo"/>
+	    		<ResponseButton message="even more messages woohoo"/>
 	  	</View>
 	    </View>
 	</View>
@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
   },
   button_underlay_row: {
     flexDirection: 'row',
-    backgroundColor: 'rgba(0,0,0,.2)', 
+    backgroundColor: 'rgba(0,0,0,.4)', 
     margin: 5,
   },
   button_underlay_col: {
     flexDirection : 'column',
-    backgroundColor: 'purple', 
+    backgroundColor: 'rgba(0,0,0,0)', 
     margin: 5,
   },
 });

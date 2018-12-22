@@ -18,6 +18,8 @@ export default class CardFeed extends React.Component {
 	  <FeedHeader />  
 	  <CardView />
 	  <DividerView />
+	  <CardView />
+	  <DividerView />
         </ScrollView>
       </View>
     );

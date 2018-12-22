@@ -30,14 +30,18 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 10,
     backgroundColor: 'white',
+	  borderWidth: 1,
   },
   statementUnder: {
-    margin: 10,	
-    backgroundColor: 'rgba(333,333,333,.9)',
+    margin: 20,	
+    backgroundColor: 'coral',
     flex: 1,
+    borderRadius: 10,
+    borderWidth: 1,
   },
   statementText: {
-    fontSize: 30, 
+    fontSize: 25, 
+    textAlign: 'center',
   },
 });
 

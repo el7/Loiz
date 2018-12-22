@@ -27,10 +27,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white', 
     margin: '10%',
+    borderRadius: 10,
+    borderWidth: 1,
   },
   headerUnderlay: {
     flex: 1,
     marginTop: 50,
+	  borderRadius: 10,
+	  borderWidth: 1,
     marginLeft: '10%',
     marginRight: '10%',
     backgroundColor: 'rgba(0,0,200,.3)', // blue

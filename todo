@@ -2,7 +2,7 @@
 
 - create system in FeedView to collect feed items based on parameters
 - establish asyncStorage,
-- create fake profile data
+	- create fake profile data
 - create real working buttons
 - make colors not hideous
 
