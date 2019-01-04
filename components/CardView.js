@@ -13,7 +13,7 @@ export default class CardView extends React.Component {
 	    <View style={styles.button_underlay_row}>
 	    	<View style={styles.button_underlay_col}>
 	    		<ResponseButton message="even more messages woohoo"/>
-	    		<ResponseButton message="even more messages woohoo"/>
+	    		<ResponseButton message="Happy New Year woohoo"/>
 	    	</View>
 	    	<View style={styles.button_underlay_col}>
 	    		<ResponseButton message="new message woo"/>
