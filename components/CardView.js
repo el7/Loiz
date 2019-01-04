@@ -8,8 +8,14 @@ import StatementView from './StatementView';
 export default class CardView extends React.Component {
   render() {
     return (
+
+	// steps to creating a card view:
+	    // Find ID of card data to be shown
+	    // display the data from the card using ID
+
+
 	<View style={styles.cardUnderlay}>
-	<StatementView />
+	<StatementView id="123" />
 	    <View style={styles.button_underlay_row}>
 	    	<View style={styles.button_underlay_col}>
 	    		<ResponseButton message="even more messages woohoo"/>
