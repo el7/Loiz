@@ -20,7 +20,8 @@ render() {
   }
 
   saveData() {
-  
+ 	Let user = 'JD';
+	  AsyncStorage.setItem('user', user);
   }
 }
 
