@@ -1,14 +1,26 @@
 import React from 'react';
 import Colors from '../constants/Colors';
-import { ScrollView, Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
+import { ScrollView, 
+	Platform, 
+	StatusBar, 
+	StyleSheet, 
+	View, 
+	Text 
+	TouchableOpacity } from 'react-native';
 
 export default class ResponseButton extends React.Component {
 render() {
     return (
 	<View style={styles.responseButton}>
+	    <TouchableOpacity onPress={this.saveData}>
 	    <Text>{this.props.message}</Text>
+	    </TouchableOpacity>
 	</View>
     );
+  }
+
+  saveData() {
+  
   }
 }
 
