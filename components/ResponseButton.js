@@ -5,7 +5,7 @@ import { ScrollView,
 	StatusBar, 
 	StyleSheet, 
 	View, 
-	Text 
+	Text, 
 	TouchableOpacity } from 'react-native';
 
 export default class ResponseButton extends React.Component {
@@ -18,11 +18,12 @@ render() {
 	</View>
     );
   }
-
+/*
   saveData() {
  	Let user = 'JD';
 	  AsyncStorage.setItem('user', user);
-  }
+  };
+*/
 }
 
 
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
     padding: 5,
     margin: 10,
     maxWidth: 100,
-    backgroundColor: 'rgba(330,330,300,1)',
+    backgroundColor: 'rgba(330,330,300,.71)',
   },
 });
 
