@@ -13,17 +13,27 @@ export default class CardView extends React.Component {
 	    // Find ID of card data to be shown
 	    // display the data from the card using ID
 
+	// card data: 
+	    // color, statement, a1-4, pv1-4
 
 	<View style={styles.cardUnderlay}>
 	<StatementView id="123" />
 	    <View style={styles.button_underlay_row}>
 	    	<View style={styles.button_underlay_col}>
-	    		<ResponseButton message="even more messages woohoo"/>
-	    		<ResponseButton message="Happy New Year woohoo"/>
+	    		<ResponseButton 
+	    			message="even more messages woohoo" 
+	    			color="blue" />
+	    		<ResponseButton 
+	    			message="Happy New Year woohoo"
+	    			color="red" />
 	    	</View>
 	    	<View style={styles.button_underlay_col}>
-	    		<ResponseButton message="new message woo"/>
-	    		<ResponseButton message="even more messages woohoo"/>
+	    		<ResponseButton 
+	    			message="new message woo"
+	    			color="green" />
+	    		<ResponseButton 
+	    			message="even more messages woohoo"
+	    			color="purple" />
 	  	</View>
 	    </View>
 	</View>

@@ -22,7 +22,7 @@ export default class ResponseButton extends React.Component {
 	    <Button 
 	    	onPress={this.selectButton} 
 	    	title={this.props.message} 
-	    	color='rgba(250,0,0,1)' 
+	    	color={this.props.color} 
 	    />
 	</View>
     );
@@ -33,7 +33,7 @@ export default class ResponseButton extends React.Component {
 const styles = StyleSheet.create({
   responseButton: {
     borderWidth: 2,
-    borderColor: 'rgba(250,0,0,1)',
+    borderColor: 'rgba(250,40,30,1)',
     alignItems: 'center',
     borderRadius: 0,
     justifyContent: 'center',
