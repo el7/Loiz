@@ -4,21 +4,66 @@ import {
 	con
 } from 'react-navigation';
 import React from 'react';
-import { ScrollView, StyleSheet, View, Text } from 'react-native';
+import { ScrollView, 
+	StyleSheet, 
+	View, 
+	Text,
+	AsyncStorage } from 'react-native';
 import CardView from './CardView';
 import FeedHeader from './FeedHeader';
 import DividerView from './DividerView';
 import AppNavigator from '../navigation/AppNavigator';
 
 export default class CardFeed extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+        myKey: null
+    }
+}
+
+  async getKey() {
+    try {
+      const value = await AsyncStorage.getItem('@MySuperStore:key');
+      this.setState({myKey: value});
+    } catch (error) {
+      console.log("Error retrieving data" + error);
+    }
+}
+
+async saveKey(value) {
+    try {
+      await AsyncStorage.setItem('@MySuperStore:key', value);
+    } catch (error) {
+      console.log("Error saving data" + error);
+    }
+}
+
+  async resetKey() {
+    try {
+      await AsyncStorage.removeItem('@MySuperStore:key');
+      const value = await AsyncStorage.getItem('@MySuperStore:key');
+      this.setState({myKey: value});
+    } catch (error) {
+      console.log("Error resetting data" + error);
+    }
+}
+
+
   render() {
+
+    let cards = ["1", "2", "3"];
+
     return (
       <View>
         <ScrollView style={styles.scrollContainer}>
 	  <FeedHeader />  
-	  <CardView />
+	  <CardView cardID={cards[0]} />
 	  <DividerView />
-	  <CardView />
+	  <CardView cardID={cards[1]}/>
+	  <DividerView />
+	  <CardView cardID={cards[2]}/>
 	  <DividerView />
         </ScrollView>
       </View>

@@ -12,8 +12,10 @@ import { ScrollView,
 
 export default class ResponseButton extends React.Component {
 	
+
   selectButton() {
-	  Alert.alert('pressed. This is where we save selection data.');
+	  Alert.alert('pressed. This is where we save selection data. value: ');
+//	 Alert.alert(nval);
   };
 
   render() {
