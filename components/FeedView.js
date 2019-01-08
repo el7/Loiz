@@ -8,7 +8,7 @@ import { ScrollView,
 	StyleSheet, 
 	View, 
 	Text,
-	AsyncStorage } from 'react-native';
+	AsyncStorage, Alert } from 'react-native';
 import CardView from './CardView';
 import FeedHeader from './FeedHeader';
 import DividerView from './DividerView';
@@ -19,20 +19,22 @@ export default class CardFeed extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        myKey: null
+        myKey: null,
+	aUserID: "1",
+	pUserID: "999"
     }
 }
 
   async getKey() {
     try {
-      const value = await AsyncStorage.getItem('@MySuperStore:key');
-      this.setState({myKey: value});
+      const ASvalue = await AsyncStorage.getItem('@MySuperStore:key');
+      this.setState({pUserID: ASvalue});
     } catch (error) {
-      console.log("Error retrieving data" + error);
+      console.log("Error retrieving data: " + error);
     }
 }
 
-async saveKey(value) {
+  async saveKey(value) {
     try {
       await AsyncStorage.setItem('@MySuperStore:key', value);
     } catch (error) {
@@ -55,8 +57,12 @@ async saveKey(value) {
 
     let cards = ["1", "2", "3"];
 
+//		  this.getKey();
+    let pUserID = this.state.pUserID;
+
     return (
       <View>
+	<Text> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Some Text-- {this.pUserID} --More Text </Text>
         <ScrollView style={styles.scrollContainer}>
 	  <FeedHeader />  
 	  <CardView cardID={cards[0]} />
