@@ -6,40 +6,41 @@ import { ScrollView,
 	StyleSheet, 
 	View, 
 	Text, 
-	TouchableOpacity } from 'react-native';
+	TouchableOpacity,
+	Button,
+	Alert } from 'react-native';
 
 export default class ResponseButton extends React.Component {
-render() {
+	
+  selectButton() {
+	  Alert.alert('pressed. This is where we save selection data.');
+  };
+
+  render() {
     return (
 	<View style={styles.responseButton}>
-	    <TouchableOpacity onPress={this.saveData}>
-	    <Text>{this.props.message}</Text>
-	    </TouchableOpacity>
+	    <Button 
+	    	onPress={this.selectButton} 
+	    	title={this.props.message} 
+	    	color='rgba(250,0,0,1)' 
+	    />
 	</View>
     );
-  }
-/*
-  saveData() {
- 	Let user = 'JD';
-	  AsyncStorage.setItem('user', user);
   };
-*/
-}
 
+}
 
 const styles = StyleSheet.create({
   responseButton: {
     borderWidth: 2,
     borderColor: 'rgba(250,0,0,1)',
     alignItems: 'center',
-    borderRadius: 15,
+    borderRadius: 0,
     justifyContent: 'center',
     padding: 5,
     margin: 10,
     maxWidth: 100,
-    backgroundColor: 'rgba(330,330,300,.71)',
+    backgroundColor: 'rgba(330,330,300,.95)',
   },
 });
-
-
 
