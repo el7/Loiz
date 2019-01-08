@@ -5,12 +5,9 @@ import { ScrollView, Platform, StatusBar, StyleSheet, View, Text } from 'react-n
 export default class StatementView extends React.Component {
   render() {
     return (
-	    // collect cID of 'card' from calling function
-	    // obtain sID of 'statement' from the card
-	    // return statement using sID
 	    <View style={styles.statementUnder}>
 		<View style={styles.statementView}>
-	    	<Text style={styles.statementText}>This is a longer, more beautiful statement view.</Text>
+	    	<Text style={styles.statementText}>{this.props.statement}</Text>
 	    </View>
 	    </View>
     );
@@ -18,17 +15,6 @@ export default class StatementView extends React.Component {
 }
 
 
-export class StatementViewBig extends React.Component {
-  render() {
-    return (
-	    <View style={styles.statementUnder}>
-		<View style={styles.statementView}>
-	    	<Text style={styles.statementText}>This is a statement view. With lots of text, lots and lots of text.</Text>
-	    </View>
-	    </View>
-    );
-  }
-}
 
 const cid = '123';
 
