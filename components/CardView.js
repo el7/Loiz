@@ -20,7 +20,7 @@ export default class CardView extends React.Component {
 
 	// read async data for a card
 
-	let card_statement = "< Short Statement >";
+	let card_statement = "< Short Statement > more length in the title";
 	let button_color = ["red", "blue", "green", "purple"];
 	let button_text = ["my message", "another message", "other messages", "yay messages!"];
 	let button_value = "3";

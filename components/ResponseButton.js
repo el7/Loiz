@@ -14,8 +14,11 @@ export default class ResponseButton extends React.Component {
 	
 
   selectButton() {
-	  Alert.alert('pressed. This is where we save selection data. value: ');
-//	 Alert.alert(nval);
+	  Alert.alert('pressed. This is where we save selection data. ');
+//	  Alert.alert(nval);
+	  // also think about changing button appearance... 
+	  // maybe color inversion?
+	  // maybe stop movement?
   };
 
   render() {
