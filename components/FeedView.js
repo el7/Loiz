@@ -23,7 +23,7 @@ export default class CardFeed extends React.Component {
 	aUserID: "1",
 	pUserID: "999"
     }
-}
+  }
 
   async getKey() {
     try {
@@ -32,7 +32,7 @@ export default class CardFeed extends React.Component {
     } catch (error) {
       console.log("Error retrieving data: " + error);
     }
-}
+  }
 
   async saveKey(value) {
     try {
@@ -40,7 +40,7 @@ export default class CardFeed extends React.Component {
     } catch (error) {
       console.log("Error saving data" + error);
     }
-}
+  }
 
   async resetKey() {
     try {
@@ -50,7 +50,7 @@ export default class CardFeed extends React.Component {
     } catch (error) {
       console.log("Error resetting data" + error);
     }
-}
+  }
 
 
   render() {
