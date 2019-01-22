@@ -62,7 +62,7 @@ export default class CardFeed extends React.Component {
 
     return (
       <View>
-	<Text> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Some Text-- {this.pUserID} --More Text </Text>
+	<Text>{this.pUserID}</Text>
         <ScrollView style={styles.scrollContainer}>
 	  <FeedHeader />  
 	  <CardView cardID={cards[0]} />
