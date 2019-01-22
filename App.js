@@ -5,7 +5,7 @@ import AppNavigator from './navigation/AppNavigator';
 export default class App extends React.Component {
   render() {
     return (
-	// Creates the navigation menu
+	// create the navigation menu, and present their screens
 	<AppNavigator />
     );
   }
