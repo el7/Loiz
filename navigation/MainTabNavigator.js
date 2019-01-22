@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, Stylesheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
@@ -43,9 +43,8 @@ export default createBottomTabNavigator({
   LinksStack,
 });
 
-const styles = Stylesheet.create ({
+const styles = StyleSheet.create ({
 	tabButton: {
 	}
 });
-
 
